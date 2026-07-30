@@ -78,7 +78,7 @@ export default function Notifications() {
                         {' '}notification{unread !== 1 ? 's' : ''}
           </span>
                 ) : (
-                    'All caught up — no unread notifications.'
+                    'All caught up, no unread notifications.'
                 )}
             </p>
 

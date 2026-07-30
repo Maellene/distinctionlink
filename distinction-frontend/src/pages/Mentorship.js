@@ -196,7 +196,7 @@ export default function Mentorship() {
                         ) : (
                             <select value={selectedMentor}
                                     onChange={e => setSelectedMentor(e.target.value)} required>
-                                <option value="">-- Select a mentor --</option>
+                                <option value=""> </option>
                                 {mentors.map(m => (
                                     <option key={m.id} value={m.id}>{m.name}</option>
                                 ))}
@@ -207,7 +207,7 @@ export default function Mentorship() {
                     <div className="form-group">
                         <label>Topic</label>
                         <input value={topic} onChange={e => setTopic(e.target.value)}
-                               placeholder="e.g. Career advice, Python, Web Development..."
+                               placeholder=""
                                required />
                     </div>
 

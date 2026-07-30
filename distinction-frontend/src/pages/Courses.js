@@ -293,7 +293,7 @@ export default function Courses() {
                     style={{ width: '100%', padding: '12px 16px', fontSize: '1rem',
                         border: '2px solid #1a3c5e', borderRadius: '8px', outline: 'none',
                         fontFamily: 'inherit' }}
-                    placeholder="Search courses — try python, full stack, data science..."
+                    placeholder="Search for courses"
                     value={search}
                     onChange={e => setSearch(e.target.value)}
                 />

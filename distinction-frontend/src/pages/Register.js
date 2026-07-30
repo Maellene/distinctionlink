@@ -64,7 +64,7 @@ export default function Register() {
                             name="name"
                             value={form.name}
                             onChange={handleChange}
-                            placeholder="Your full name"
+                            placeholder=""
                             required
                         />
                     </div>
@@ -77,7 +77,7 @@ export default function Register() {
                             type="email"
                             value={form.email}
                             onChange={handleChange}
-                            placeholder="you@email.com"
+                            placeholder=""
                             required
                         />
                     </div>
@@ -127,7 +127,7 @@ export default function Register() {
                                     color: form.password.length < 6  ? '#e74c3c' :
                                         form.password.length < 10 ? '#f39c12' : '#27ae60' }}>
                                     {form.password.length < 6  ? 'Too short' :
-                                        form.password.length < 10 ? 'Good' : 'Strong ✓'}
+                                        form.password.length < 10 ? '' : ''}
                                 </p>
                             </div>
                         )}
@@ -135,7 +135,7 @@ export default function Register() {
 
                     {/* Role — Student or Mentor only */}
                     <div className="form-group">
-                        <label>I am registering as a…</label>
+                        <label>I am registering as a</label>
                         <select name="role" value={form.role} onChange={handleChange}>
                             <option value="STUDENT">Student</option>
                             <option value="MENTOR">Mentor</option>
