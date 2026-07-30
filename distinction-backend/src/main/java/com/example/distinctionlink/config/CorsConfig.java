@@ -14,7 +14,11 @@ public class CorsConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOriginPatterns(List.of("*"));
+        config.setAllowedOriginPatterns(List.of(
+                "http://localhost:3000",
+                "https://*.vercel.app",
+                "https://distinctionlink.vercel.app"
+        ));
         config.setAllowedMethods(Arrays.asList(
                 "GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"
         ));
